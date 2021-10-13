@@ -44,13 +44,13 @@ class NameSorterTest {
         names.add("Xiong, Fong");
 
         List<String> sortedNames = new ArrayList<>();
-        names.add("Johnson, Jim");
-        names.add("Jones, Aaron");
-        names.add("Jones, Chris");
-        names.add("Ling, Mai");
-        names.add("Swift, Geoffrey");
-        names.add("Xiong, Fong");
-        names.add("Zarnecki, Sabrina");
+        sortedNames.add("Johnson, Jim");
+        sortedNames.add("Jones, Aaron");
+        sortedNames.add("Jones, Chris");
+        sortedNames.add("Ling, Mai");
+        sortedNames.add("Swift, Geoffrey");
+        sortedNames.add("Xiong, Fong");
+        sortedNames.add("Zarnecki, Sabrina");
 
         assertEquals(sortedNames, ns.organizeNames(names));
     }
