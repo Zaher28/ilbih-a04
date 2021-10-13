@@ -1,5 +1,8 @@
 package baseline;
 
+import java.io.File;
+import java.util.List;
+
 public class Solution42 {
 
     /*
@@ -31,7 +34,12 @@ public class Solution42 {
     //main method
     public static void main(String[] args){
 
+        //FileProcessor object to call its methods
+        FileProcessor fp = new FileProcessor();
+        List<String> info = fp.getInputFromFile();
+        info = fp.processInformation(info);
 
+        fp.displayInformation(info);
 
 
     }
