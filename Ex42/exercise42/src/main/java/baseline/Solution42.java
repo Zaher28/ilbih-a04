@@ -1,6 +1,9 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 4 Solutions
+ *  Copyright 2021 Zaher Ilbih
+ */
 package baseline;
 
-import java.io.File;
 import java.util.List;
 
 public class Solution42 {
