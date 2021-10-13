@@ -4,10 +4,7 @@
  */
 package baseline;
 
-import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Solution41 {
 
@@ -33,10 +30,11 @@ public class Solution41 {
 
     //main method
     public static void main(String[] args){
-        //Solution object to call methods
-
-
-
+        //NameSorter object to call methods
+        NameSorter ns = new NameSorter();
+        List<String> names = ns.getInputFromFile();
+        names = ns.organizeNames(names);
+        ns.printOutSortedNamesToFile(names);
 
     }
 

@@ -1,9 +1,10 @@
 package baseline;
 
+
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.Writer;
+import java.util.*;
 
 public class NameSorter {
 
@@ -21,7 +22,7 @@ public class NameSorter {
             Scanner scanFile = new Scanner(input);
 
             while(scanFile.hasNextLine()){
-
+                //adds all strings to the list
                 names.add(scanFile.nextLine());
             }
 
@@ -33,7 +34,7 @@ public class NameSorter {
 
         }
 
-        ;
+
 
         return names;
 
@@ -41,10 +42,36 @@ public class NameSorter {
     }
     //method that takes a list of names and organizes them by alphabetical order
     public List<String> organizeNames(List<String> names){
-
-
-
+        //sorts 'names' alphabetically
+        Collections.sort(names);
         return names;
+
+    }
+
+    //method that prints out a list of sorted names to a file
+    public void printOutSortedNamesToFile(List<String> sortedNames){
+
+        Writer wr;
+
+        try{
+
+            wr = new FileWriter("data/exercise41_output.txt");
+
+            for(String name: sortedNames){
+
+                wr.write(name + "\n");
+
+            }
+
+            wr.flush();
+            wr.close();
+
+        }catch(Exception e){
+
+            System.out.println("File not found!");
+
+        }
+
     }
 
 }
