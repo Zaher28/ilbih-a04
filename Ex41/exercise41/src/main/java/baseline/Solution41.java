@@ -28,20 +28,12 @@ public class Solution41 {
     that looks like the following example output.
      */
 
-    //Method that attains all the names in the input file and returns the list
-    //filled with the names
-    public List<String> getInputFromFile(){
 
-
-    }
-    //method that takes a list of names and organizes them by alphabetical order
-    public List<String> organizeNames(List<String> names){
-
-    }
 
 
     //main method
     public static void main(String[] args){
+        //Solution object to call methods
 
 
 
