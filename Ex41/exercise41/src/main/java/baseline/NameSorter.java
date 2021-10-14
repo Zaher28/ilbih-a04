@@ -61,6 +61,8 @@ public class NameSorter {
 
             wr = new FileWriter("data/exercise41_output.txt");
 
+            wr.write("Total of " + sortedNames.size() + " names\n");
+            wr.write("-----------------\n");
             for(String name: sortedNames){
 
                 wr.write(name + "\n");
