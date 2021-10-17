@@ -8,7 +8,6 @@ import java.util.Map;
 
 public class Solution46 {
 
-
     /*
     Create a program that reads in a file named `exercise46_input.txt` and counts the frequency of words in the file. Then construct a histogram displaying the words and the frequency, and display the histogram to the screen.
     Example Output
