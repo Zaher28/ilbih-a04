@@ -20,7 +20,8 @@ public class FileProcessor {
 
     //method that goes through the File and takes it into an arrayList of words
     //It then replaces every instance of 'utilize' with 'use'
-    public void processFile(){
+    //returns 1 if succesful, 0 if not
+    public int processFile(){
         String[]  spacedOutWords;
         FileReader fr = null;
         BufferedReader bfr=null;
@@ -63,10 +64,11 @@ public class FileProcessor {
 
         }catch(Exception e){
             System.out.println("Sorry, an error happened !\n");
+            return 0;
         }
 
 
-
+        return 1;
 
     }
 
