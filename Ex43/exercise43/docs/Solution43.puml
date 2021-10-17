@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Solution43{
+
+    +void generateWebSkeleton()
+    +main(String[] args)
+
+}
+
+@enduml
