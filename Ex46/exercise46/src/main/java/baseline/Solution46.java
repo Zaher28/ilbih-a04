@@ -4,6 +4,8 @@
  */
 package baseline;
 
+import java.util.Map;
+
 public class Solution46 {
 
 
@@ -29,6 +31,8 @@ public class Solution46 {
     public static void main(String[] args){
 
         FileProcessor fp = new FileProcessor();
+        Map<String,Integer> mp = fp.processFile();
+        fp.printOutFrequencies(mp);
 
     }
 
